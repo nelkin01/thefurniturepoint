@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+
+#about{
+    background-color: cyan;
+    width: 100%;
+    color:black;
+    text-align: center;
+    background-size: cover;
+    height: 300px;
+    font-family: serif;
+}
+
+.txt{
+    padding: 150px;
+    font-size: 20px;
+}
+
+#underline{
+    border-bottom:  3px solid black;
+}
+
+.column {
+  float: left;
+  width: 32%;
+  margin-bottom: 16px;
+  padding: 0 5px;
+}
+
+.card {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.row {margin: 0 -5px;}
+
+.contact{
+    /*background-color: black;*/
+    width: 100%;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.container{
+    text-align: center;
+}
+#con{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    position: relative;
+    background-color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+}
+  
+#tab{
+    margin: auto;
+    width: 50%;
+}
+  
+.full{
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    
+}
+  
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+table,th,td {
+    border : 1px solid black;
+    border-collapse: collapse;
+    
+}
+th,td {
+    padding: 5px;
+}
+  
+  

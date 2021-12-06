@@ -1,0 +1,106 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:40px;
+}
+/* Logo and Image */
+#logo{
+    margin: 10px 20px;
+
+}
+#logo img{
+    height: 60px;
+    margin: 20px 10px;
+}
+#login img{
+    height: 50px;
+    margin: 20px 10px;
+    background-color: white;
+    align-self: right;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: -10px;
+
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    top: -20px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem ;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: fantasy;
+    font-weight: 200;
+}
+#navbar ul li a:hover{
+    color:blue;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 280px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home img{
+    margin: 10px;
+    height: 100px;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("done.png") no-repeat center center/cover;
+    height: 100%;
+    top: 90px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.btn1{
+    float: left;
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: yellow;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn2{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color:cyan;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}

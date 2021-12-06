@@ -1,0 +1,127 @@
+
+.full {
+  background: url("https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: auto;
+}
+
+
+form {
+  background-color: #9999ff;
+  margin:0 350px;
+  border-radius: 25px;
+  box-shadow: 8px 8px 10px black;
+}
+
+
+.container{
+  border-radius: 25px;
+  padding: 20px;
+}
+
+
+label{
+  margin:0 10px;
+}
+
+
+input[type=text], input[type=password] ,input[type=number] {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 25px;
+    resize: vertical;
+}
+
+input[type=text]:focus, input[type=password]:focus ,input[type=number]:focus{
+  background-color: #ddd;
+  outline: none;
+
+}
+
+#fname ,#lname {
+  width: 45%;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 25px;
+  opacity: 0.8;
+}
+
+button:hover{
+  opacity: 1;
+}
+
+#regi{
+  width: auto;
+  float: right;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#login{
+  background-color: #00331a;
+  width: auto;
+  margin:0px auto;
+  box-shadow: 8px 8px 10px black;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  input[type=text], input[type=password] ,input[type=number],  input[type=submit],input[type=checkbox] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+form , #login{
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
